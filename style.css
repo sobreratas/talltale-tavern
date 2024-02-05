@@ -752,4 +752,8 @@ nav .fa-solid {
     iframe {
         width: 300px;
     }
+
+    .nav ul {
+        backdrop-filter: blur(10px);
+    }
 }
