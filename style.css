@@ -184,7 +184,7 @@ nav ul li a:hover {
     font-size: 3rem;
 }
 
-.media-container {
+.media-container, .media-container2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -686,7 +686,16 @@ nav .fa-solid {
 
     }
 
+    .media-page-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
     iframe {
+        display: block;
+        margin: 0 auto;
         width: 300px;
     }
 
@@ -695,10 +704,23 @@ nav .fa-solid {
     }
 
     .media-left-col {
-        padding: 10px;
+        flex-basis: 100%;
+        padding: 20px;
     }
     
     .media-right-col {
-        padding: 10px;
+        flex-basis: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .media-container2 {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 }
