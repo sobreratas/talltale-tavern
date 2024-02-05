@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+    <title>Talltale Tavern</title>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="home-logo">
+                    <h1>Talltale Tavern</h1>
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="about.html" onclick="closemenu()">About</a></li>
+                    <li><a href="links.html" onclick="closemenu()">Links</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+               
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div class="welcome-container">
+        <div class="welcome-text">
+            <h1 class="card">Talltale Tavern</h1>
+            <p class="card">Welcome to the Talltale Tavern! We are a DnD one shot podcast dedicated to bringing you the finest in
+                fun and engaging roleplay stories every month. Adventures are served up in two courses delivered to
+                you on the first and third Wednesday of each month. You'll laugh. You'll cry. You'll laugh so hard
+                you'll cry!</p>
+        </div>
+    </div>
+
+
+
+    <a href="#" class="go-top-btn"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="contact-container">
+            <h1 class="sub-title card">Contact</h1>
+            <form id="contactForm" action="#form-submit-random-string-url" method="POST">
+                <input  class="card" type="text" name="Name" placeholder="Your Name" required>
+                <input class="card" type="text" name="Email" placeholder="Your Email" required>
+                <textarea class="card" name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2 card">Submit</button>
+            </form>
+        </div>
+        <div class="copyright">
+            <div class="social-icons card">
+                <a href="#" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                <a href="#/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="card">&#169; Copyright Talltale Tavern <span class="year"></span>. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
