@@ -498,7 +498,7 @@ nav ul li a:hover {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid var(--main-color);
+    border: none;
     padding: 14px 50px;
     text-decoration: none;
     color: var(--font-color);
@@ -506,7 +506,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: var(--main-color);
+    filter: brightness(150%);
 }
 
 /* Contact */
@@ -548,7 +548,7 @@ nav ul li a:hover {
 }
 
 .social-icons a:hover {
-    color: var(--main-color);
+    filter: brightness(150%);
     transform: translateY(-5px);
 }
 
