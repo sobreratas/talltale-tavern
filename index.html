@@ -4,65 +4,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <title>Talltale Tavern</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/talltale-official-art.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
-    <title>Talltale Tavern</title>
+
 </head>
 
 <body>
-    <div id="header" class="header">
-        <div class="container">
-            <nav>
-                <a href="index.html" class="home-logo">
+    <header>
+        <div class="header-section">
+        </div>
+        <div class="header-content">
+            <img src="images/talltale-tavern-logo.png" alt="Talltale Tavern logo">
+            <button class="mobile-header-btn"><a
+                    href="https://open.spotify.com/artist/1JiwP8G8YmcSkOxz60b5uZ?si=rtMcqS6wTmy0Fuvp__ifhQ">Listen
+                    Here</a></button>
+        </div>
+    </header>
+    <main>
+        <!-- WELCOME -->
+        <section id="welcome">
+            <div class="x-row welcome-container">
+                <div class="box">
                     <h1>Talltale Tavern</h1>
-                </a>
-                <ul id="sidemenu">
-                    <li><a href="#header" onclick="closemenu()">Home</a></li>
-                    <li><a href="about.html" onclick="closemenu()">About</a></li>
-                    <li><a href="media.html" onclick="closemenu()">Media</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-               
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-        </div>
-    </div>
-    <div class="welcome-container">
-        <div class="welcome-text">
-            <h1 class="card">Talltale Tavern</h1>
-            <p class="card">Welcome to the Talltale Tavern! We are a DnD one shot podcast dedicated to bringing you the finest in
-                fun and engaging roleplay stories every month. Adventures are served up in two courses delivered to
-                you on the first and third Wednesday of each month. You'll laugh. You'll cry. You'll laugh so hard
-                you'll cry!</p>
-        </div>
-    </div>
-
-
-
-    <a href="#" class="go-top-btn"><i class="fa-solid fa-arrow-up"></i></a>
-    <!-- Contact -->
-    <div id="contact">
-        <div class="contact-container">
-            <h1 class="sub-title card">Contact</h1>
-            <form id="contactForm" action="#form-submit-random-string-url" method="POST">
-                <input  class="card" type="text" name="Name" placeholder="Your Name" required>
-                <input class="card" type="text" name="Email" placeholder="Your Email" required>
-                <textarea class="card" name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2 card">Submit</button>
-            </form>
-        </div>
-        <div class="copyright">
-            <div class="social-icons card">
-                <a href="#" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-                <a href="#/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <p>Welcome to the Talltale Tavern! We are a DnD one shot podcast dedicated to bringing you the
+                        finest in fun and engaging roleplay stories every month. Adventures are served up in two courses
+                        delivered to you on the first and third Wednesday of each month. You'll laugh. You'll cry.
+                        You'll laugh so hard you'll cry!</p>
+                </div>
+                <div class="box">
+                    <img src="/images/talltale-official-art.jpg" alt="">
+                </div>
             </div>
-            <p class="card">&#169; Copyright Talltale Tavern <span class="year"></span>. All rights reserved.</p>
-        </div>
-    </div>
+        </section>
 
+        <!-- SPOTIFY -->
+        <section id="spotify">
+            <div class="x-row spotify">
+                <div class="full-box">
+                    <div class="full-inner-box">
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/show/3DofPYa9xB33Gh4gomGkRr?utm_source=generator&theme=0"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="full-box">
+                    <div class="full-inner-box">
+                        <h1>Spotify</h1>
+                        <p>A fun and unique monthly one shot TTRPG (mostly DnD) podcast. Grab a drink, pull up a chair,
+                            and listen each month as a new story unfolds.</p>
+                        <p>Available on all streaming platforms.</p>
+                        <a href="https://open.spotify.com/show/3DofPYa9xB33Gh4gomGkRr?si=f7f733d8cf874126"
+                            target="_blank">Listen on Spotify</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FULL VIDEO CONTAINER -->
+        <div class="video-row">
+            <div class="full-video-container middle-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sHrK45oWLF8?si=YWu0oFa-OJFgVwgD"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <p class="full-video-text  middle-card">YouTube</p>
+            <p class="middle-card">Need more than just audio? You can also watch the Talltale Tavern Podcast on YouTube
+                too!</p>
+            <a href="https://www.youtube.com/@TalltaleTavernPodcast" class="full-video-btn-link middle-card"
+                target="_blank">More
+                Videos</a>
+        </div>
+
+        <section id="latest-news-section">
+            <h2 class="fade-in">Episode Guide</h2>
+            <div class="latest-news-card-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="" target="_blank">Diselderly Conduct Pt. 1</a></td>
+                            <td>6/14/2023</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="" target="_blank">Diselderly Conduct Pt. 2</a></td>
+                            <td>6/28/2023</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="" target="_blank">Zoonopia Pt. 1</a></td>
+                            <td>7/12/2023</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="" target="_blank">Zoonopia Pt. 2</a></td>
+                            <td>7/25/2023</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="" target="_blank">Wild Love Pt. 1</a></td>
+                            <td>8/9/2023</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="" target="_blank">Wild Love Pt. 2</a></td>
+                            <td>8/23/2023</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a href="" target="_blank">The Maleficent Seven Pt. 1</a></td>
+                            <td>9/6/2023</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><a href="" target="_blank">The Maleficent Seven Pt. 2</a></td>
+                            <td>6/20/2023</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><a href="" target="_blank">The Monster Bash Pt. 1</a></td>
+                            <td>10/4/2023</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><a href="" target="_blank">The Monster Bash Pt. 2</a></td>
+                            <td>10/18/2023</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><a href="" target="_blank">Cloudy with a Chance of Fireballs Pt. 1</a></td>
+                            <td>11/8/2023</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><a href="" target="_blank">Cloudy with a Chance of Fireballs Pt. 2</a></td>
+                            <td>11/22/2023</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td><a href="" target="_blank">A Christmas Peril Pt. 1</a></td>
+                            <td>12/6/2023</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td><a href="" target="_blank">A Christmas Peril Pt. 2</a></td>
+                            <td>12/20/2023</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td><a href="" target="_blank">Crowning AI-chievement Pt. 1</a></td>
+                            <td>1/5/2024</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td><a href="" target="_blank">Crowning AI-chievement Pt. 2</a></td>
+                            <td>1/18/2024</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td><a href="" target="_blank">The Sorcerer's Appendix Pt. 1</a></td>
+                            <td>2/7/2024</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td><a href="" target="_blank">The Sorcerer's Appendix Pt. 2</a></td>
+                            <td>2/21/2024</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td><a href="" target="_blank">Killing Time Pt. 1</a></td>
+                            <td>3/6/2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+
+
+
+
+        <!-- CONTACT CONTAINER -->
+        <section id="contact">
+            <div class="contact-container">
+                <h1>Contact</h1>
+                <form action="">
+                    <div class="label-input-container">
+                        <label for="name">Name:</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="label-input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" name="" id="">
+                    </div>
+                    <div class="label-input-container">
+                        <label for="message">Message:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOLLOW US -->
+    <section id="socials">
+        <div class="social-media-container">
+            <h1>Follow us!</h1>
+            
+            <div class="icon-container">
+                <a href="https://www.tiktok.com/@talltaletavernpodcast" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/talltale_tavern_podcast/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://discord.com/invite/kj77yNXXxj" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://open.spotify.com/show/3DofPYa9xB33Gh4gomGkRr?si=8651c72111734658" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.youtube.com/@TalltaleTavernPodcast/videos" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER CONTAINER -->
+    <footer>
+        <div class="footer-inner-container">
+            <img class="footer-logo" src="images/talltale-tavern-logo.png" alt="">
+        </div>
+        <div class="copyright-container footer-inner-container">
+            <p>&#169; Copyright Talltale Tavern <span class="year"></span>. All rights reserved.</p>
+            <p class="credit">Website design by <a href="https://chrisratsabout.com/" target="_blank">Chris
+                    Ratsabout</a></p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
