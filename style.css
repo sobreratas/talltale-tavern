@@ -20,127 +20,6 @@ a {
   font-size: 1.4rem;
 }
 
-hr.style-eight {
-  overflow: visible;
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
-  margin-top: 40px;
-}
-hr.style-eight:after {
-  content: "§";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: transparent;
-}
-
-/*** HAMBURGER STYLES ***/
-.hamburger-container {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  transition: background 0.3s ease-in-out;
-  z-index: 99999999;
-}
-
-.hamburger-container:hover {
-  cursor: pointer;
-}
-
-.bar {
-  background-color: #fff;
-  height: 3px;
-  width: 30px;
-  opacity: 0.8;
-  display: block;
-  margin: 0 auto;
-}
-
-.hamburger-container.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-container.active .bar:nth-child(1) {
-  width: 40px;
-  transform: translateY(12px) rotate(45deg) translateX(0px);
-  transition: transform 0.3s;
-  background-color: #000;
-}
-
-.hamburger-container.active .bar:nth-child(3) {
-  width: 40px;
-  transform: translateY(-13px) rotate(-45deg);
-  transition: transform 0.3s;
-  background-color: #000;
-}
-
-/* MENU EXPANDED STYLES */
-.no-scroll {
-  overflow: hidden;
-}
-
-.menu-expanded {
-  opacity: 0;
-  height: 100vh;
-  background-image: url("images/menu-background.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -111;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.menu-expanded img {
-  width: 200px;
-}
-
-.menu-expanded.active {
-  z-index: 9999999;
-  opacity: 1;
-}
-
-.menu-expanded ul {
-  margin-top: 100px;
-  text-align: center;
-  color: #fff;
-}
-
-.menu-expanded ul li {
-  list-style: none;
-  margin: 20px;
-  font-weight: 600;
-}
-
-.menu-expanded ul li a {
-  text-decoration: none;
-  font-size: 2rem;
-  color: #000;
-}
-
-.menu-expanded ul li a:hover {
-  cursor: pointer;
-  color: #fff;
-  transition: 0.3s ease-in;
-}
-
 /* CONTENT ROW STYLES */
 .x-row {
   display: flex;
@@ -156,7 +35,7 @@ hr.style-eight:after {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height: 100vh;
   position: relative;
 }
@@ -279,6 +158,7 @@ hr.style-eight:after {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .full-video-container {

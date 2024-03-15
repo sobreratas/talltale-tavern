@@ -1,3 +1,10 @@
+const headerSection = document.querySelector(".header-section");
+
+window.addEventListener("scroll", ()=> {
+  let offset = window.scrollY;
+  headerSection.style.backgroundPositionY = offset * 0.7 + 'px';
+})
+
 //FADE IN - LEFT
 const fadeIn = document.querySelectorAll(".fade-in");
 
